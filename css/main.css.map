@@ -8,7 +8,8 @@
         "../scss/Base/_reset.scss",
         "../scss/Base/_customize.scss",
         "../scss/Components/_button.scss",
-        "../scss/Layouts/_header.scss"
+        "../scss/Layouts/_header.scss",
+        "../scss/Layouts/_carousel.scss"
     ],
     "names": [],
     "file": "main.css"
