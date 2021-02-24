@@ -5,45 +5,47 @@
     background-color: $color-gray-0;
     display: flex;
     .top_left {
-      ul {
-        display: flex;
-        margin-bottom: 0;
-        margin-left: $mg-2;
-        .with-separator {
-          padding-left: 2px;
-          margin-left: 2px;
-          border-left: 1px solid #d6d5d5;
-        }
-        li {
-          list-style: none;
-          a {
-            padding: $pd-1;
-            text-decoration: none;
-            @include styleText($color-blue-1, $fs-1, $fw-bold);
-            :hover {
-              @include styleText($color-blue-2, $fs-1, $fw-bold);
-            }
-            .icon-mustang {
-              background-image: url(../img/mustang.svg);
-              height: 30px;
-              width: 43px;
-              display: inline-block;
-              vertical-align: middle;
-            }
-            .icon-bronco {
-              background-image: url(../img/bronco.svg);
-              height: 30px;
-              width: 43px;
-              display: inline-block;
-              vertical-align: middle;
-              background-repeat: no-repeat;
-            }
-            .left-text {
-              display: inline-block;
-              width: auto;
-              text-align: left;
-              vertical-align: middle;
-              padding: 10px 0px 10px 0px;
+      .left-content {
+        padding-left: 95px;
+        ul {
+          display: flex;
+          margin-bottom: 0;
+          .with-separator {
+            padding-left: 2px;
+            margin-left: 2px;
+            border-left: 1px solid #d6d5d5;
+          }
+          li {
+            list-style: none;
+            a {
+              padding: $pd-1;
+              text-decoration: none;
+              @include styleText($color-blue-1, $fs-1, $fw-bold);
+              :hover {
+                @include styleText($color-blue-2, $fs-1, $fw-bold);
+              }
+              .icon-mustang {
+                background-image: url(../img/mustang.svg);
+                height: 30px;
+                width: 43px;
+                display: inline-block;
+                vertical-align: middle;
+              }
+              .icon-bronco {
+                background-image: url(../img/bronco.svg);
+                height: 30px;
+                width: 43px;
+                display: inline-block;
+                vertical-align: middle;
+                background-repeat: no-repeat;
+              }
+              .left-text {
+                display: inline-block;
+                width: auto;
+                text-align: left;
+                vertical-align: middle;
+                padding: 10px 0px 10px 0px;
+              }
             }
           }
         }
@@ -54,11 +56,11 @@
       text-align: right;
       position: relative;
       .top-heading {
-          @include styleText($color-blue-1,$fs-1,$fw-bold);
+        @include styleText($color-blue-0, $fs-1, $fw-bold);
         text-decoration: none;
         position: absolute;
         top: 10px;
-        right: 100px;
+        right: 110px;
         .icon-dealer {
           background-image: url(../img/leader.svg);
           height: 23px;
@@ -68,6 +70,74 @@
           background-repeat: no-repeat;
           background-size: 100% 100%;
           color: $color-blue-1;
+        }
+      }
+    }
+  }
+  #header__bottom {
+    display: flex;
+    padding: $pd-2 0;
+    .bottom_left {
+      padding-left: 130px;
+      a {
+        text-decoration: none;
+        .brand-logo {
+          background: transparent url(../img/bsr-sprite2x.webp) no-repeat -200px
+            0;
+          width: 93px;
+          height: 35px;
+          background-size: 400px 200px;
+          display: inline-block;
+          padding: 0;
+        }
+      }
+    }
+
+    .bottom_right {
+      display: flex;
+      .nav-left {
+        .nav-menu {
+          display: flex;
+          .nav-item {
+            padding: 0 $pd-0;
+            list-style: none;
+            a {
+              @include styleText($color-blue-2, $fs-1 + 1, $fw-bold);
+              text-decoration: none;
+              letter-spacing: 0.5px;
+            }
+            :hover {
+              color: $color-blue-1;
+            }
+          }
+        }
+      }
+      .nav-right {
+        padding-right: 95px;
+        .nav-menu {
+          display: flex;
+          .nav-item {
+            padding: 0 $pd-0;
+            list-style: none;
+            margin-left: $mg-1 + 5;
+            a {
+              @include styleText($color-blue-2, $fs-1 , $fw-bold);
+              text-decoration: none;
+              letter-spacing: 0.5px;
+              .user-menu-icon {
+                background-image: url(../img/my.svg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                vertical-align: middle;
+              }
+            }
+            :hover {
+              color: $color-blue-1;
+            }
+          }
         }
       }
     }
