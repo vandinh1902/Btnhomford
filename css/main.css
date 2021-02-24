@@ -28,6 +28,14 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 0;
+  margin-left: 25px;
+}
+
+#header #header__top .top_left ul .with-separator {
+  padding-left: 2px;
+  margin-left: 2px;
+  border-left: 1px solid #d6d5d5;
 }
 
 #header #header__top .top_left ul li {
@@ -37,9 +45,15 @@ html, body {
 #header #header__top .top_left ul li a {
   padding: 10px;
   text-decoration: none;
-  color: #0276b3;
-  font-size: 15px;
-  font-weight: normal;
+  color: #102b4e;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#header #header__top .top_left ul li a :hover {
+  color: #2096cd;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 #header #header__top .top_left ul li a .icon-mustang {
@@ -74,6 +88,10 @@ html, body {
 }
 
 #header #header__top .right-content .top-heading {
+  color: #102b4e;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
   position: absolute;
   top: 10px;
   right: 100px;
