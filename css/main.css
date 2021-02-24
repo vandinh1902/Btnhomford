@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#header {
+  max-width: 1440px;
+  margin: auto;
+}
+
+#header #header__top {
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header #header__top .top_left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header #header__top .top_left ul li {
+  list-style: none;
+}
+
+#header #header__top .top_left ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: #0276b3;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#header #header__top .top_left ul li a .icon-mustang {
+  background-image: url(../img/mustang.svg);
+  height: 30px;
+  width: 43px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#header #header__top .top_left ul li a .icon-bronco {
+  background-image: url(../img/bronco.svg);
+  height: 30px;
+  width: 43px;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+
+#header #header__top .top_left ul li a .left-text {
+  display: inline-block;
+  width: auto;
+  text-align: left;
+  vertical-align: middle;
+  padding: 10px 0px 10px 0px;
+}
+
+#header #header__top .right-content {
+  padding: 10px;
+  text-align: right;
+  position: relative;
+}
+
+#header #header__top .right-content .top-heading {
+  position: absolute;
+  top: 10px;
+  right: 100px;
+}
+
+#header #header__top .right-content .top-heading .icon-dealer {
+  background-image: url(../img/leader.svg);
+  height: 23px;
+  width: 23px;
+  vertical-align: middle;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #102b4e;
+}
+/*# sourceMappingURL=main.css.map */
