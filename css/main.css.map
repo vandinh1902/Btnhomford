@@ -3,13 +3,12 @@
     "mappings": "",
     "sources": [
         "../scss/main.scss",
-        "../scss/Base/_reset.scss",
-        "../scss/Helper/_variable.scss",
-        "../scss/Helper/_extend.scss",
-        "../scss/Helper/_function.scss",
+        "../scss/Helper/_variables.scss",
         "../scss/Helper/_mixin.scss",
-        "../scss/Layout/_header.scss",
-        "../scss/Component/_button.scss"
+        "../scss/Base/_reset.scss",
+        "../scss/Base/_customize.scss",
+        "../scss/Components/_button.scss",
+        "../scss/Layouts/_header.scss"
     ],
     "names": [],
     "file": "main.css"
