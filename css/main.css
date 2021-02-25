@@ -201,4 +201,9 @@ html, body {
 #header #header__bottom .bottom_right .nav-right .nav-menu .nav-item :hover {
   color: #102b4e;
 }
+
+#demo {
+  max-width: 1440px;
+  margin: auto;
+}
 /*# sourceMappingURL=main.css.map */
