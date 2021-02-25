@@ -1,0 +1,45 @@
+#Intro {
+  max-width: 1440px;
+  margin: auto;
+  .Intro_content {
+      padding-top: $pd-2;
+    .Intro_heading {
+      text-align: center;
+      h1 {
+        font-size: 46px;
+        margin-top: $mg-2;
+        font-family: "fordngbs-antenna-light", arial, helvetica, sans-serif;
+      }
+      .heading_text {
+        span {
+          font-size: 16px;
+        }
+      }
+      p {
+        .btn-primary {
+          min-height: 50px;
+          width: 270px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          font-family: "fordngbs-antenna-light", arial, helvetica, sans-serif;
+          font-size: 16px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          margin-top: 1rem;
+          white-space: normal;
+          line-height: 1.25;
+        }
+        a {
+          background-color: #0276b3;
+          border: 1px solid #0276b3;
+          color: #fff;
+        }
+        :hover {
+          background-color: #fff;
+          color: #0276b3;
+        }
+      }
+    }
+  }
+}

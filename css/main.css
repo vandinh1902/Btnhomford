@@ -206,4 +206,53 @@ html, body {
   max-width: 1440px;
   margin: auto;
 }
+
+#Intro {
+  max-width: 1440px;
+  margin: auto;
+}
+
+#Intro .Intro_content {
+  padding-top: 20px;
+}
+
+#Intro .Intro_content .Intro_heading {
+  text-align: center;
+}
+
+#Intro .Intro_content .Intro_heading h1 {
+  font-size: 46px;
+  margin-top: 25px;
+  font-family: "fordngbs-antenna-light", arial, helvetica, sans-serif;
+}
+
+#Intro .Intro_content .Intro_heading .heading_text span {
+  font-size: 16px;
+}
+
+#Intro .Intro_content .Intro_heading p .btn-primary {
+  min-height: 50px;
+  width: 270px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "fordngbs-antenna-light", arial, helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  white-space: normal;
+  line-height: 1.25;
+}
+
+#Intro .Intro_content .Intro_heading p a {
+  background-color: #0276b3;
+  border: 1px solid #0276b3;
+  color: #fff;
+}
+
+#Intro .Intro_content .Intro_heading p :hover {
+  background-color: #fff;
+  color: #0276b3;
+}
 /*# sourceMappingURL=main.css.map */
