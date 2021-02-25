@@ -255,4 +255,48 @@ html, body {
   background-color: #fff;
   color: #0276b3;
 }
+
+#Finish {
+  max-width: 1440px;
+  margin: auto;
+}
+
+#Finish .Finish_content {
+  padding: 75px;
+}
+
+#Finish .Finish_content .Finish_heading {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#Finish .Finish_content .Finish_heading h2 {
+  color: #242424;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+#Finish .Finish_content .Finish_heading .Finish_text {
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Finish .Finish_content .Finish_heading .Finish_text span {
+  font-size: 16px;
+}
+
+#Finish .Finish_video {
+  position: relative;
+  width: 100%;
+}
+
+#Finish .Finish_video .Finish_bg {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  height: 100%;
+}
 /*# sourceMappingURL=main.css.map */
