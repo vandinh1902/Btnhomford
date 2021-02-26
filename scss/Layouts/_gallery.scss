@@ -44,5 +44,20 @@
         }
       }
     }
+    .brand-gallery{
+        .brand_top{
+            display: flex;
+            width: 100%;
+            .top_heading{
+                width: 75%;
+            }
+            .img_list{
+                width: 25%;
+                .img_item{
+                    width: 100%;
+                }
+            }
+        }
+    }
   }
 }
