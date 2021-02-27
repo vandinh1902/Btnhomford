@@ -1,0 +1,84 @@
+#footer {
+    max-width: 1440px;
+    margin: auto;
+    .card-body {
+        text-align: center;
+        background-color: $color-blue-4;
+        color: $color-gray-0;
+        h5 {
+            font-size: $fs-4;
+        }
+        p {
+            a{
+                text-decoration: underline;
+            }
+        }
+        a.btn-primary {
+            background-color: $color-blue-0;
+            border: 1px solid $color-blue-0;
+            padding: $pd-1;
+            &:hover {
+                @include styleButtonHover($color-white-0,$color-black-1,$color-black-1);
+            }
+        }
+    }
+    .navbar {
+        text-align: center;
+        background-color: $color-black-3;
+        padding: 10px 95px 10px 95px;
+        form {
+           .form-control {
+               background: transparent none;
+               color: $color-white-0;
+               vertical-align: middle;
+               font-size: $fs-3;
+               border: none;
+               &::placeholder {
+                   color: $color-white-0;
+               }
+           } 
+        }
+        ul.ul-right {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+            li {
+                padding: 0 $pd-0;
+                a{
+                    padding: 0;
+                    color: $color-gray-2;
+                    &:hover{
+                        color: $color-white-0;
+                    }
+                }
+                span {
+                    font-weight: bold;
+                    color: $color-white-0;
+                }
+            }
+        }
+    }
+    .container-main{
+        padding: 15px 95px;
+        background-color: $color-black-2;
+        .list-heading {
+            padding: 25px 18px 25px 0px;
+            color: $color-white-0;
+            font-size: $fs-2;
+        }
+        ul {
+            li {
+                list-style: none;
+                a {
+                    color: $color-gray-2;
+                    text-decoration: none;
+                    padding: 3px 25px 5px 0;
+                    &:hover{
+                        color: $color-white-0;
+                    }
+                }
+            }
+        }
+    }
+}
