@@ -686,27 +686,53 @@ html, body {
 }
 
 #footer .container-main {
-  padding: 15px 95px;
   background-color: #242424;
+  padding: 25px 0 90px;
 }
 
-#footer .container-main .list-heading {
+#footer .container-main .footer-main {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+}
+
+#footer .container-main .footer-main .container-left {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer .container-main .footer-main .container-right {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer .container-main .footer-main .list-heading {
   padding: 25px 18px 25px 0px;
   color: #fff;
   font-size: 20px;
 }
 
-#footer .container-main ul li {
-  list-style: none;
+#footer .container-main .footer-main .list-heading .icon {
+  font-size: 20px;
+  color: red;
+  height: 30px;
+  width: 40px;
 }
 
-#footer .container-main ul li a {
+#footer .container-main .footer-main ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+#footer .container-main .footer-main ul li a {
   color: #a7a7a7;
   text-decoration: none;
   padding: 3px 25px 5px 0;
 }
 
-#footer .container-main ul li a:hover {
+#footer .container-main .footer-main ul li a:hover {
   color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
