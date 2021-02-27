@@ -1,4 +1,62 @@
 #demo{
     max-width: 1440px;
     margin: auto;
+    position: relative;
+    .carousel-indicators {
+        li {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+    }
+    .carousel-control-prev {
+        opacity: 1;
+        .button__left {
+            position: absolute;
+            left: 0;
+            width: 55px;
+            top: 50%;
+            height: 60px;
+            border: 1px solid $color-gray-2;
+            line-height: 70px;
+            background-color: $color-gray-2;
+            &:hover {
+                border: 1px solid $color-blue-2;
+                background-color: $color-white-0;
+                i {
+                    color:$color-blue-2;
+                }
+            }
+            i {
+                font-size: 35px;
+                color: $color-white-0;
+            }
+        }
+    }
+
+    .carousel-control-next {
+        opacity: 1;
+        .button__right {
+            position: absolute;
+            right: 0;
+            width: 55px;
+            top: 50%;
+            height: 60px;
+            border: 1px solid $color-gray-2;
+            line-height: 70px;
+            background-color: $color-gray-2;
+            &:hover {
+                border: 1px solid $color-blue-2;
+                background-color: $color-white-0;
+                i {
+                    color:$color-blue-2;
+                }
+            }
+            i {
+                font-size: 35px;
+                color: $color-white-0;
+            }
+        }
+    }
+    
 }
