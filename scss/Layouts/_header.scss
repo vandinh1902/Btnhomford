@@ -1,12 +1,21 @@
 #header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.container {
   max-width: 1440px;
-  margin: auto;
-  #header__top {
+  padding:  0;
+}
+.navbar__header{
+  box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 20%);
+  .nav__top {
     background-color: $color-gray-0;
     display: flex;
+    padding: 0 95px;
     .top_left {
       .left-content {
-        padding-left: 95px;
         ul {
           display: flex;
           margin-bottom: 0;
@@ -60,7 +69,7 @@
         text-decoration: none;
         position: absolute;
         top: 10px;
-        right: 110px;
+        right: 15px;
         .icon-dealer {
           background-image: url(../img/leader.svg);
           height: 23px;
@@ -74,37 +83,44 @@
       }
     }
   }
-  #header__bottom {
+  .nav__bottom {
+    height: 80px;
+    background-color: $color-white-0;
     display: flex;
-    padding: $pd-2 0;
-    .bottom_left {
-      padding-left: 130px;
+    align-items: center;
+    padding: 0 95px;
+    .nav_bottom_left {
+      padding-right: 45px;
       a {
         text-decoration: none;
-        .brand-logo {
+        .nav-brand-logo {
           background: transparent url(../img/bsr-sprite2x.webp) no-repeat -200px
             0;
           width: 93px;
           height: 35px;
           background-size: 400px 200px;
           display: inline-block;
-          padding: 0;
         }
       }
     }
 
-    .bottom_right {
+    .nav_bottom_right {
+      width: 100%;
       display: flex;
+      align-items: center;
+      justify-content: space-around;
       .nav-left {
+        display: flex;
+        align-items: center;
         .nav-menu {
           display: flex;
+          margin-bottom: 0px;
           .nav-item {
-            padding: 0 $pd-0;
             list-style: none;
             a {
-              @include styleText($color-blue-2, $fs-1 + 1, $fw-bold);
+              @include styleText($color-blue-2, $fs-1 + 1, $fw-bold - 200);
               text-decoration: none;
-              letter-spacing: 0.5px;
+              padding: 10px 8px;
             }
             :hover {
               color: $color-blue-1;
@@ -113,17 +129,18 @@
         }
       }
       .nav-right {
-        padding-right: 95px;
+        display: flex;
+        align-items: center;
+        margin-left: 120px;
         .nav-menu {
           display: flex;
+          margin-bottom: 0px;
           .nav-item {
-            padding: 0 $pd-0;
             list-style: none;
-            margin-left: $mg-1 + 5;
             a {
-              @include styleText($color-blue-2, $fs-1 , $fw-bold);
+              @include styleText($color-blue-2, $fs-1 , $fw-bold - 200);
               text-decoration: none;
-              letter-spacing: 0.5px;
+              padding: 10px 8px;
               .user-menu-icon {
                 background-image: url(../img/my.svg);
                 background-repeat: no-repeat;
@@ -142,4 +159,28 @@
       }
     }
   }
+}
+@include responsive("extra-large") {
+  .nav__top {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .nav__bottom {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    .nav_bottom_right {
+      .nav-left {
+      }
+      .nav-right {
+        margin-left: 10px !important;
+        .user-text {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+
+@include responsive("large") {
+  
 }
