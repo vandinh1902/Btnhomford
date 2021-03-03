@@ -888,7 +888,92 @@ html, body {
 
 #footer {
   max-width: 1440px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+#footer .card-body {
+  text-align: center;
+  background-color: #0276b3;
+  color: #f3f3f3;
+}
+
+#footer .card-body h5 {
+  font-size: 40px;
+}
+
+#footer .card-body p a {
+  text-decoration: underline;
+}
+
+#footer .card-body a.btn-primary {
+  background-color: #0276b3;
+  border: 1px solid #0276b3;
+  padding: 10px;
+}
+
+#footer .card-body a.btn-primary:hover {
+  background-color: #fff;
+  color: #102b4e;
+  border-color: #102b4e;
+}
+
+#footer .navbar {
+  text-align: center;
+  background-color: #29303b;
+  padding: 10px 95px 10px 95px;
+}
+
+#footer .navbar form .form-control {
+  background: transparent none;
+  color: #fff;
+  vertical-align: middle;
+  font-size: 24px;
+  border: none;
+}
+
+#footer .navbar form .form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#footer .navbar form .form-control:-ms-input-placeholder {
+  color: #fff;
+}
+
+#footer .navbar form .form-control::-ms-input-placeholder {
+  color: #fff;
+}
+
+#footer .navbar form .form-control::placeholder {
+  color: #fff;
+}
+
+#footer .navbar ul.ul-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+#footer .navbar ul.ul-right li {
+  padding: 0 5px;
+}
+
+#footer .navbar ul.ul-right li a {
+  padding: 0;
+  color: #a7a7a7;
+}
+
+#footer .navbar ul.ul-right li a:hover {
+  color: #fff;
+}
+
+#footer .navbar ul.ul-right li span {
+  font-weight: bold;
+  color: #fff;
 }
 
 #footer .container-main {
@@ -928,13 +1013,6 @@ html, body {
   font-size: 20px;
 }
 
-#footer .container-main .footer-main .list-heading .icon {
-  font-size: 20px;
-  color: red;
-  height: 30px;
-  width: 40px;
-}
-
 #footer .container-main .footer-main ul li {
   list-style: none;
   padding: 5px 0;
@@ -948,5 +1026,208 @@ html, body {
 
 #footer .container-main .footer-main ul li a:hover {
   color: #fff;
+}
+
+#footer .secondary_container {
+  background-color: #102b4e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 95px;
+}
+
+#footer .secondary_container .secondary-left {
+  width: 50%;
+}
+
+#footer .secondary_container .secondary-left .left-contact {
+  padding-top: 30px;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer .secondary_container .secondary-left .left-contact li {
+  margin-left: 0;
+  padding-bottom: 20px;
+}
+
+#footer .secondary_container .secondary-left .left-contact li .update {
+  color: #37a9e8;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+#footer .secondary_container .secondary-left .left-contact li .update .icon-contact {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  color: white;
+  background-color: #2096cd;
+  padding: 10px;
+}
+
+#footer .secondary_container .secondary-right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+#footer .secondary_container .secondary-right .text-right {
+  color: white;
+  margin: 0px 25px 0 0;
+  padding: 5px;
+  font-size: 13px;
+}
+
+#footer .secondary_container .secondary-right .right-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0;
+}
+
+#footer .secondary_container .secondary-right .right-contact li {
+  list-style: none;
+}
+
+#footer .secondary_container .secondary-right .right-contact li a {
+  padding: 5px;
+  font-size: 20px;
+  margin-right: 3px;
+  text-decoration: none;
+  color: #fff;
+}
+
+#footer .secondary_container .secondary-right .right-contact li a .bi {
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+}
+
+#footer .secondary_container .secondary-right .right-contact li a .bi-facebook {
+  background-color: #3c5b99;
+}
+
+#footer .secondary_container .secondary-right .right-contact li a .bi-twitter {
+  background-color: #1da2f3;
+}
+
+#footer .secondary_container .secondary-right .right-contact li a .bi-youtube {
+  background-color: #ff0100;
+}
+
+#footer .secondary_container .secondary-right .right-contact li a .bi-instagram {
+  background-color: #dc2c75;
+}
+
+#footer nav {
+  padding: 20px 0 50px 0;
+  background-color: #e7e7e7;
+}
+
+#footer nav .nav_container {
+  padding: 0 95px;
+  position: relative;
+}
+
+#footer nav .nav_container .language {
+  color: white;
+  padding: 5px 0 15px 0;
+}
+
+#footer nav .nav_container .language a {
+  color: #0276b3;
+}
+
+#footer nav .nav_container .language a:hover {
+  text-decoration: none;
+  color: #102b4e;
+}
+
+#footer nav .nav_container .language .icon-language {
+  font-size: 24px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+#footer nav .nav_container .language .text-language {
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+#footer nav .nav_container .logo .logo-ford {
+  background-image: url(../img/logo-ford.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 73px;
+  height: 26px;
+  color: red;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+}
+
+#footer nav .nav_container ._2021 .ford-company {
+  list-style: none;
+}
+
+#footer nav .nav_container ._2021 .ford-company a {
+  color: #29303b;
+  text-decoration: none;
+  padding: 5px 25px 5px 0;
+}
+
+#footer nav .nav_container .link-contact {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+#footer nav .nav_container .link-contact .skinny {
+  padding: 5px 0px;
+  overflow: hidden;
+}
+
+#footer nav .nav_container .link-contact .skinny a {
+  width: 100%;
+  color: #29303b;
+  font-size: 13px;
+  padding: 5px 0;
+}
+
+#footer nav .nav_container .link-contact .skinny a:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
