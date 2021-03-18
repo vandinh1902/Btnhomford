@@ -3,7 +3,7 @@
     margin: 0 auto;
     .navbar {
         text-align: center;
-        background-color: $color-black-3;
+        background-color: $color-black-0;
         padding: 10px 95px 10px 95px;
         form {
             .form-control {
@@ -207,7 +207,7 @@
                 .ford-company{
                     list-style: none;
                     a{
-                        color: $color-black-3;
+                        color: $color-black-0;
                         text-decoration: none;
                         padding: 5px 25px 5px 0;
                     }
@@ -225,7 +225,7 @@
                     overflow: hidden;
                     a{
                         width: 100%;
-                        color: $color-black-3;
+                        color: $color-black-0;
                         font-size: $fs-1;
                         padding: 5px 0;
                         &:hover{
