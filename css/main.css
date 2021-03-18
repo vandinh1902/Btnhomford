@@ -213,7 +213,7 @@ html, body {
   cursor: pointer;
 }
 
-.navbar__header .nav__bottom .nav_hamburger_menu .hamberger_btn {
+.navbar__header .nav__bottom .nav_hamburger_menu .hamburger_btn {
   width: 35px;
   height: 30px;
   display: -webkit-box;
@@ -227,7 +227,7 @@ html, body {
       justify-content: space-around;
 }
 
-.navbar__header .nav__bottom .nav_hamburger_menu .hamberger_btn .line {
+.navbar__header .nav__bottom .nav_hamburger_menu .hamburger_btn .line {
   width: 100%;
   height: 2px;
   background-color: #29303b;
@@ -236,18 +236,18 @@ html, body {
   transition: all 0.2s;
 }
 
-.navbar__header .nav__bottom .nav_hamburger_menu .hamberger_btn.change .line1 {
+.navbar__header .nav__bottom .nav_hamburger_menu .hamburger_btn.change .line1 {
   -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
           transform: rotateZ(-45deg) translate(-8px, 6px);
 }
 
-.navbar__header .nav__bottom .nav_hamburger_menu .hamberger_btn.change .line2 {
+.navbar__header .nav__bottom .nav_hamburger_menu .hamburger_btn.change .line2 {
   opacity: 0;
 }
 
-.navbar__header .nav__bottom .nav_hamburger_menu .hamberger_btn.change .line3 {
-  -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
-          transform: rotateZ(-45deg) translate(-8px, 6px);
+.navbar__header .nav__bottom .nav_hamburger_menu .hamburger_btn.change .line3 {
+  -webkit-transform: rotateZ(45deg) translate(-8px, -6px);
+          transform: rotateZ(45deg) translate(-8px, -6px);
 }
 
 .navbar__header .nav__bottom .nav_hamburger_menu .menu_text {
