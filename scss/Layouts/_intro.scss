@@ -41,5 +41,40 @@
         }
       }
     }
+    .Intro_image{
+      .image_content{
+        img{
+          width: 100%;
+        }
+        .Img2{
+          display: none;
+        }
+      }
+    }
   }
 }
+
+@include responsive("large"){
+  .Intro_image{
+    .image_content{
+      .Img1{
+        display: none;
+      }
+      .Img2{
+        display: block  !important;
+      }
+    }
+  }
+}
+
+@include responsive("medium"){
+  .Intro_heading {
+    padding: 0 $pd-2;
+    h1 {
+      font-size: 36px !important;
+    }
+  }
+  
+}
+
+

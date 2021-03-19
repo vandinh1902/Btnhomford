@@ -309,6 +309,7 @@ html, body {
   max-width: 1440px;
   margin: auto;
   position: relative;
+  margin-top: 120px;
 }
 
 #demo .carousel-indicators li {
@@ -375,6 +376,12 @@ html, body {
   color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .carousel-item img {
+    height: 500px;
+  }
+}
+
 #Intro {
   max-width: 1440px;
   margin: auto;
@@ -424,48 +431,90 @@ html, body {
   color: #0276b3;
 }
 
-#Finish {
-  max-width: 1440px;
+#Intro .Intro_content .Intro_image .image_content img {
+  width: 100%;
+}
+
+#Intro .Intro_content .Intro_image .image_content .Img2 {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .Intro_image .image_content .Img1 {
+    display: none;
+  }
+  .Intro_image .image_content .Img2 {
+    display: block  !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Intro_heading {
+    padding: 0 20px;
+  }
+  .Intro_heading h1 {
+    font-size: 36px !important;
+  }
+}
+
+.Finish .Finish_content {
+  width: 86%;
   margin: auto;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 
-#Finish .Finish_content {
-  padding: 75px;
-}
-
-#Finish .Finish_content .Finish_heading {
+.Finish .Finish_content .Finish_heading {
   text-align: center;
-  padding-bottom: 20px;
+  margin: 30px 0;
 }
 
-#Finish .Finish_content .Finish_heading h2 {
-  color: #242424;
+.Finish .Finish_content .Finish_heading h1 {
+  color: #29303b;
   font-size: 42px;
   font-weight: bold;
 }
 
-#Finish .Finish_content .Finish_heading .Finish_text {
-  max-width: 740px;
-  margin-left: auto;
-  margin-right: auto;
+.Finish .Finish_content .Finish_heading .Finish_text {
+  width: 70%;
+  margin: auto;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  padding-top: 10px;
+  padding-bottom: 2rem;
+  color: #29303b;
 }
 
-#Finish .Finish_content .Finish_heading .Finish_text span {
+.Finish .Finish_content .Finish_heading .Finish_text span {
   font-size: 16px;
 }
 
-#Finish .Finish_video {
+.Finish .Finish_video {
   position: relative;
-  width: 100%;
+  height: 0;
+  padding-bottom: 56%;
 }
 
-#Finish .Finish_video .Finish_bg {
-  display: inline-block;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: contain;
+.Finish .Finish_video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .Finish_text {
+    width: 96% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Finish .Finish_content {
+    width: 94%;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
 }
 
 #gallery {

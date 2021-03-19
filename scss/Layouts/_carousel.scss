@@ -2,6 +2,7 @@
     max-width: 1440px;
     margin: auto;
     position: relative;
+    margin-top: 120px;
     .carousel-indicators {
         li {
             width: 8px;
@@ -59,4 +60,13 @@
         }
     }
     
+}
+
+
+@include responsive("medium") {
+    .carousel-item{
+        img{
+            height: 500px;
+        }
+    }
 }
