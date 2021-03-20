@@ -67,15 +67,16 @@
       .top-heading {
         @include styleText($color-blue-0, $fs-1, $fw-bold);
         text-decoration: none;
-        .icon-dealer {
-          background-image: url(../img/leader.svg);
+        i {
+          @include styleText($color-black-0, $fs-2, $fw-bold);
           height: 23px;
           width: 23px;
-          vertical-align: middle;
-          display: inline-block;
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          color: $color-blue-1;
+          
+        }
+      }
+      :hover{
+        i{
+          color: $color-blue-0;
         }
       }
     }

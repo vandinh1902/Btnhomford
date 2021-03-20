@@ -110,15 +110,16 @@ html, body {
   text-decoration: none;
 }
 
-.navbar__header .nav__top .right-content .top-heading .icon-dealer {
-  background-image: url(../img/leader.svg);
+.navbar__header .nav__top .right-content .top-heading i {
+  color: #29303b;
+  font-size: 20px;
+  font-weight: bold;
   height: 23px;
   width: 23px;
-  vertical-align: middle;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  color: #102b4e;
+}
+
+.navbar__header .nav__top .right-content :hover i {
+  color: #0276b3;
 }
 
 .navbar__header .nav__bottom {
