@@ -20,3 +20,15 @@ viewBtn.addEventListener("click", () => {
     viewContent.classList.toggle("open");
 
 })
+
+
+// Contact
+
+const contactShowBtn = document.querySelector(".contact-show-btn");
+const showList = document.querySelector(".contact-show-content");
+const iconUp = document.querySelector("#icon");
+
+contactShowBtn.addEventListener("click", () => {
+    showList.classList.toggle("open");
+    iconUp.classList.toggle("icon-up");
+})

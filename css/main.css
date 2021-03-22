@@ -940,12 +940,7 @@ html, body {
   }
 }
 
-#contact {
-  max-width: 1440px;
-  margin: auto;
-}
-
-#contact .contact__recall {
+.contact .contact__recall {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -959,14 +954,14 @@ html, body {
   background-color: #e7e7e7;
 }
 
-#contact .contact__recall .detail p {
+.contact .contact__recall .detail p {
   padding-bottom: 10px;
   color: #d92e14;
   font-size: 42px;
   font-weight: normal;
 }
 
-#contact .contact__recall .detail a {
+.contact .contact__recall .detail a {
   display: block;
   padding: 12px 20px;
   background-color: #d92e14;
@@ -975,22 +970,22 @@ html, body {
   border: 1px solid #fff;
 }
 
-#contact .contact__recall .detail a:hover {
+.contact .contact__recall .detail a:hover {
   background-color: #fff;
   border: 1px solid #d92e14;
 }
 
-#contact .contact__recall .detail a:hover span {
+.contact .contact__recall .detail a:hover span {
   color: #d92e14;
 }
 
-#contact .contact__recall .detail a span {
+.contact .contact__recall .detail a span {
   color: #fff;
   font-size: 16px;
   font-weight: normal;
 }
 
-#contact .contact__show p {
+.contact .contact__show .contact-show-btn p {
   text-align: center;
   color: #2096cd;
   font-size: 15px;
@@ -1000,58 +995,92 @@ html, body {
   cursor: pointer;
 }
 
-#contact .contact__residents {
+.contact .contact__show .contact-show-btn p:hover {
+  color: #29303b;
+}
+
+.contact .contact__show .contact-show-btn p .icon-up {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.contact .contact__show .contact-show-content .contact-show-list {
+  padding: 40px 95px;
+  background: #f3f3f3;
+  max-height: 340px;
+  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.contact .contact__show .contact-show-content .contact-show-list .contact-show-item {
+  padding-bottom: 10px;
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 18px;
+  list-style: none;
+}
+
+.contact .contact__show .contact-show-content.open .contact-show-list {
+  display: block;
+}
+
+.contact .contact__residents {
   text-align: center;
-  background-color: #092A46;
+  background-color: #092a46;
   padding-top: 30px;
   padding-bottom: 20px;
 }
 
-#contact .contact__residents h2 {
+.contact .contact__residents h2 {
   color: #fff;
   font-size: 42px;
   font-weight: normal;
 }
 
-#contact .contact__residents p {
+.contact .contact__residents p {
   color: #fff;
   font-size: 16px;
   font-weight: normal;
 }
 
-#contact .contact__residents p a {
+.contact .contact__residents p a {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
 
-#contact .contact__residents .button {
+.contact .contact__residents .button {
   text-decoration: none;
   display: inline-block;
   padding: 15px 25px;
   background-color: #0276b3;
 }
 
-#contact .contact__residents .button:hover {
+.contact .contact__residents .button:hover {
   background-color: #fff;
 }
 
-#contact .contact__residents .button:hover p {
+.contact .contact__residents .button:hover p {
   color: #102b4e;
 }
 
-#contact .contact__residents .button p {
+.contact .contact__residents .button p {
   margin: 0px;
   color: #fff;
   font-size: 16px;
   font-weight: normal;
 }
 
-#contact .contact__search {
+.contact .contact__search {
   padding: 30px;
   background-color: #333;
 }
 
-#contact .contact__search .search__content {
+.contact .contact__search .search__content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1060,7 +1089,7 @@ html, body {
           justify-content: center;
 }
 
-#contact .contact__search .search__content .search__left .search {
+.contact .contact__search .search__content .search__left .search {
   width: 350px;
   padding-left: 30px;
   font-size: 30px;
@@ -1069,35 +1098,35 @@ html, body {
   color: white;
 }
 
-#contact .contact__search .search__content .search__left .search::-webkit-input-placeholder {
+.contact .contact__search .search__content .search__left .search::-webkit-input-placeholder {
   color: white;
 }
 
-#contact .contact__search .search__content .search__left .search:-ms-input-placeholder {
+.contact .contact__search .search__content .search__left .search:-ms-input-placeholder {
   color: white;
 }
 
-#contact .contact__search .search__content .search__left .search::-ms-input-placeholder {
+.contact .contact__search .search__content .search__left .search::-ms-input-placeholder {
   color: white;
 }
 
-#contact .contact__search .search__content .search__left .search::placeholder {
+.contact .contact__search .search__content .search__left .search::placeholder {
   color: white;
 }
 
-#contact .contact__search .search__content .search__left .search:focus {
+.contact .contact__search .search__content .search__left .search:focus {
   border: 1px solid #37a9e8 !important;
 }
 
-#contact .contact__search .search__content .search__left .search:visited {
+.contact .contact__search .search__content .search__left .search:visited {
   border: none;
 }
 
-#contact .contact__search .search__content .search__right {
+.contact .contact__search .search__content .search__right {
   text-align: right;
 }
 
-#contact .contact__search .search__content .search__right a {
+.contact .contact__search .search__content .search__right a {
   padding-right: 5px;
   text-decoration: none;
   color: #a7a7a7;
@@ -1105,95 +1134,40 @@ html, body {
   font-weight: normal;
 }
 
-#contact .contact__search .search__content .search__right a:hover {
+.contact .contact__search .search__content .search__right a:hover {
   color: #fff;
 }
 
-#contact .contact__search .search__content .search__right .active {
+.contact .contact__search .search__content .search__right .active {
   color: #fff;
   font-size: 17px;
   font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
-  #contact .contact__search .search__content .search__left {
+  .contact .contact__show .contact-show-content .contact-show-list {
+    padding: 40px 30px;
+  }
+  .contact .contact__search .search__content .search__left {
     display: none;
   }
-  #contact .contact__search .search__content .search__right {
+  .contact .contact__search .search__content .search__right {
     text-align: left;
   }
 }
 
-#footer {
-  max-width: 1440px;
-  margin: 0 auto;
+@media screen and (max-width: 576px) {
+  .contact .contact__show .contact-show-content .contact-show-list {
+    padding: 40px 15px;
+  }
 }
 
-#footer .navbar {
-  text-align: center;
-  background-color: #29303b;
-  padding: 10px 95px 10px 95px;
-}
-
-#footer .navbar form .form-control {
-  background: transparent none;
-  color: #fff;
-  vertical-align: middle;
-  font-size: 24px;
-  border: none;
-}
-
-#footer .navbar form .form-control::-webkit-input-placeholder {
-  color: #fff;
-}
-
-#footer .navbar form .form-control:-ms-input-placeholder {
-  color: #fff;
-}
-
-#footer .navbar form .form-control::-ms-input-placeholder {
-  color: #fff;
-}
-
-#footer .navbar form .form-control::placeholder {
-  color: #fff;
-}
-
-#footer .navbar ul.ul-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin: 0;
-  padding: 0;
-}
-
-#footer .navbar ul.ul-right li {
-  padding: 0 5px;
-}
-
-#footer .navbar ul.ul-right li a {
-  padding: 0;
-  color: #a7a7a7;
-}
-
-#footer .navbar ul.ul-right li a:hover {
-  color: #fff;
-}
-
-#footer .navbar ul.ul-right li span {
-  font-weight: bold;
-  color: #fff;
-}
-
-#footer .container-main {
+.footer .container-main {
   background-color: #242424;
   padding: 25px 0 90px;
 }
 
-#footer .container-main .footer-main {
+.footer .container-main .footer-main {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1201,7 +1175,7 @@ html, body {
   padding: 10px 0;
 }
 
-#footer .container-main .footer-main .container-left {
+.footer .container-main .footer-main .container-left {
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1210,7 +1184,7 @@ html, body {
       justify-content: space-around;
 }
 
-#footer .container-main .footer-main .container-right {
+.footer .container-main .footer-main .container-right {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1219,28 +1193,28 @@ html, body {
       justify-content: space-around;
 }
 
-#footer .container-main .footer-main .list-heading {
+.footer .container-main .footer-main .list-heading {
   padding: 25px 18px 25px 0px;
   color: #fff;
   font-size: 20px;
 }
 
-#footer .container-main .footer-main ul li {
+.footer .container-main .footer-main ul li {
   list-style: none;
   padding: 5px 0;
 }
 
-#footer .container-main .footer-main ul li a {
+.footer .container-main .footer-main ul li a {
   color: #a7a7a7;
   text-decoration: none;
   padding: 3px 25px 5px 0;
 }
 
-#footer .container-main .footer-main ul li a:hover {
+.footer .container-main .footer-main ul li a:hover {
   color: #fff;
 }
 
-#footer .secondary_container {
+.footer .secondary_container {
   background-color: #102b4e;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1248,11 +1222,11 @@ html, body {
   padding: 0 95px;
 }
 
-#footer .secondary_container .secondary-left {
+.footer .secondary_container .secondary-left {
   width: 50%;
 }
 
-#footer .secondary_container .secondary-left .left-contact {
+.footer .secondary_container .secondary-left .left-contact {
   padding-top: 30px;
   margin: 0;
   list-style: none;
@@ -1264,12 +1238,12 @@ html, body {
           justify-content: space-between;
 }
 
-#footer .secondary_container .secondary-left .left-contact li {
+.footer .secondary_container .secondary-left .left-contact li {
   margin-left: 0;
   padding-bottom: 20px;
 }
 
-#footer .secondary_container .secondary-left .left-contact li .update {
+.footer .secondary_container .secondary-left .left-contact li .update {
   color: #37a9e8;
   font-size: 20px;
   text-decoration: none;
@@ -1277,7 +1251,7 @@ html, body {
   padding-bottom: 20px;
 }
 
-#footer .secondary_container .secondary-left .left-contact li .update .icon-contact {
+.footer .secondary_container .secondary-left .left-contact li .update .icon-contact {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -1287,7 +1261,7 @@ html, body {
   padding: 10px;
 }
 
-#footer .secondary_container .secondary-right {
+.footer .secondary_container .secondary-right {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1302,14 +1276,14 @@ html, body {
   padding-bottom: 40px;
 }
 
-#footer .secondary_container .secondary-right .text-right {
+.footer .secondary_container .secondary-right .text-right {
   color: white;
   margin: 0px 25px 0 0;
   padding: 5px;
   font-size: 13px;
 }
 
-#footer .secondary_container .secondary-right .right-contact {
+.footer .secondary_container .secondary-right .right-contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1321,11 +1295,11 @@ html, body {
   margin: 0;
 }
 
-#footer .secondary_container .secondary-right .right-contact li {
+.footer .secondary_container .secondary-right .right-contact li {
   list-style: none;
 }
 
-#footer .secondary_container .secondary-right .right-contact li a {
+.footer .secondary_container .secondary-right .right-contact li a {
   padding: 5px;
   font-size: 20px;
   margin-right: 3px;
@@ -1333,64 +1307,64 @@ html, body {
   color: #fff;
 }
 
-#footer .secondary_container .secondary-right .right-contact li a .bi {
+.footer .secondary_container .secondary-right .right-contact li a .bi {
   height: 100px;
   width: 100px;
   padding: 5px;
 }
 
-#footer .secondary_container .secondary-right .right-contact li a .bi-facebook {
+.footer .secondary_container .secondary-right .right-contact li a .bi-facebook {
   background-color: #3c5b99;
 }
 
-#footer .secondary_container .secondary-right .right-contact li a .bi-twitter {
+.footer .secondary_container .secondary-right .right-contact li a .bi-twitter {
   background-color: #1da2f3;
 }
 
-#footer .secondary_container .secondary-right .right-contact li a .bi-youtube {
+.footer .secondary_container .secondary-right .right-contact li a .bi-youtube {
   background-color: #ff0100;
 }
 
-#footer .secondary_container .secondary-right .right-contact li a .bi-instagram {
+.footer .secondary_container .secondary-right .right-contact li a .bi-instagram {
   background-color: #dc2c75;
 }
 
-#footer nav {
+.footer nav {
   padding: 20px 0 50px 0;
   background-color: #e7e7e7;
 }
 
-#footer nav .nav_container {
+.footer nav .nav_container {
   padding: 0 95px;
   position: relative;
 }
 
-#footer nav .nav_container .language {
+.footer nav .nav_container .language {
   color: white;
   padding: 5px 0 15px 0;
 }
 
-#footer nav .nav_container .language a {
+.footer nav .nav_container .language a {
   color: #0276b3;
 }
 
-#footer nav .nav_container .language a:hover {
+.footer nav .nav_container .language a:hover {
   text-decoration: none;
   color: #102b4e;
 }
 
-#footer nav .nav_container .language .icon-language {
+.footer nav .nav_container .language .icon-language {
   font-size: 24px;
   margin-right: 10px;
   overflow: hidden;
 }
 
-#footer nav .nav_container .language .text-language {
+.footer nav .nav_container .language .text-language {
   font-size: 13px;
   text-decoration: underline;
 }
 
-#footer nav .nav_container .logo .logo-ford {
+.footer nav .nav_container .logo .logo-ford {
   background-image: url(../img/logo-ford.jpg);
   background-size: cover;
   background-position: center;
@@ -1403,17 +1377,17 @@ html, body {
   right: 40px;
 }
 
-#footer nav .nav_container ._2021 .ford-company {
+.footer nav .nav_container ._2021 .ford-company {
   list-style: none;
 }
 
-#footer nav .nav_container ._2021 .ford-company a {
+.footer nav .nav_container ._2021 .ford-company a {
   color: #29303b;
   text-decoration: none;
   padding: 5px 25px 5px 0;
 }
 
-#footer nav .nav_container .link-contact {
+.footer nav .nav_container .link-contact {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1427,19 +1401,19 @@ html, body {
   margin: 0;
 }
 
-#footer nav .nav_container .link-contact .skinny {
+.footer nav .nav_container .link-contact .skinny {
   padding: 5px 0px;
   overflow: hidden;
 }
 
-#footer nav .nav_container .link-contact .skinny a {
+.footer nav .nav_container .link-contact .skinny a {
   width: 100%;
   color: #29303b;
   font-size: 13px;
   padding: 5px 0;
 }
 
-#footer nav .nav_container .link-contact .skinny a:hover {
+.footer nav .nav_container .link-contact .skinny a:hover {
   text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

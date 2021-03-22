@@ -1,43 +1,4 @@
-#footer {
-    max-width: 1440px;
-    margin: 0 auto;
-    .navbar {
-        text-align: center;
-        background-color: $color-black-0;
-        padding: 10px 95px 10px 95px;
-        form {
-            .form-control {
-                background: transparent none;
-                color: $color-white-0;
-                vertical-align: middle;
-                font-size: $fs-3;
-                border: none;
-                &::placeholder {
-                    color: $color-white-0;
-                }
-            }
-        }
-        ul.ul-right {
-            display: flex;
-            justify-content: flex-end;
-            margin: 0;
-            padding: 0;
-            li {
-                padding: 0 $pd-0;
-                a {
-                    padding: 0;
-                    color: $color-gray-2;
-                    &:hover {
-                        color: $color-white-0;
-                    }
-                }
-                span {
-                    font-weight: bold;
-                    color: $color-white-0;
-                }
-            }
-        }
-    }
+.footer {
     .container-main {
         background-color: $color-black-2;
         padding: 25px 0 90px;
