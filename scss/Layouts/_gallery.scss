@@ -4,11 +4,11 @@
   .gallery_content {
     .gallery_bg {
       position: relative;
-      .bg_img{
-        img{
+      .bg_img {
+        img {
           width: 100%;
         }
-        .img2{
+        .img2 {
           display: none;
         }
       }
@@ -55,39 +55,6 @@
       }
     }
     .brand-gallery {
-      // .brand_top{
-      //     display: flex;
-      //     width: 100%;
-      //     .top_heading{
-      //         width: 75%;
-      //         justify-content: center;
-      //         align-items: center;
-      //         h2 {
-      //             @include styleText($color-black-2, $fs-3 + 5, $fw-normal);
-      //         }
-      //         p {
-      //           text-align: center;
-      //           @include styleText($color-gray-1, $fs-1 + 4, 550);
-      //         }
-      //     }
-      //     .img_list{
-      //         width: 25%;
-
-      //         .img_item{
-      //             overflow: hidden;
-      //             width: 100%;
-      //             img {
-      //               transition: all 0.5s;
-      //             }
-      //             &:hover {
-      //               img {
-      //                 transform: scale(1.1);
-      //               }
-
-      //             }
-      //         }
-      //     }
-      // }
       .brand_content {
         .list {
           display: grid;
@@ -125,14 +92,7 @@
                 @include styleText($color-white-0, $fs-1, $fw-normal);
                 margin-bottom: 0px;
               }
-              .view__all {
-                display: flex;
-                opacity: 0;
-                align-items: center;
-                p {
-                  padding-right: 10px;
-                }
-              }
+              
               i {
                 font-size: $fs-1;
                 color: $color-white-0;
@@ -151,7 +111,6 @@
             grid-row: 1 / span 1;
             position: relative;
             .heading {
-              
               h2 {
                 @include styleText($color-black-2, $fs-3 + 5, $fw-normal);
                 text-align: center;
@@ -167,40 +126,39 @@
           .item__2 {
             grid-column: 4 / span 1;
             grid-row: 1 / span 1;
-           
           }
           .item__3 {
             grid-column: 1 / span 2;
             grid-row: 2 / span 2;
             .item__image {
-                img {
-                  width: 100%;
-                }
-              }
-              .item__thread {
-                position: absolute;
-                z-index: 20;
-                bottom: 0px;
-                display: flex;
+              img {
                 width: 100%;
-                padding: $pd-2 - 5;
-                background-color: $color-blue-0;
-                text-align: center;
-  
-                p {
-                  @include styleText($color-white-0, $fs-2, $fw-normal);
-                }
-                i {
-                  font-size: $fs-2;
-                  color: $color-white-0;
-                  width: 50px;
-                  height: 50px;
-                  border-radius: 50%;
-                  background-color: $color-blue-0;
-                  line-height: 50px;
-                  border: 2px solid $color-white-0;
-                }
               }
+            }
+            .item__thread {
+              position: absolute;
+              z-index: 20;
+              bottom: 0px;
+              display: flex;
+              width: 100%;
+              padding: $pd-2 - 5;
+              background-color: $color-blue-0;
+              text-align: center;
+
+              p {
+                @include styleText($color-white-0, $fs-2, $fw-normal);
+              }
+              i {
+                font-size: $fs-2;
+                color: $color-white-0;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: $color-blue-0;
+                line-height: 50px;
+                border: 2px solid $color-white-0;
+              }
+            }
           }
           .item__4 {
             grid-column: 3 / span 1;
@@ -240,10 +198,10 @@
             // object-fit: cover;
             // object-position: 65% 100%;
           }
-          .img1{
-            display: none  !important;
+          .img1 {
+            display: none !important;
           }
-          .img2{
+          .img2 {
             display: block;
           }
         }
@@ -284,29 +242,44 @@
             .item__7 {
               display: none;
             }
-            .item__1{
+            .item__1 {
               display: block;
-              .heading{
-                h2{
+              .heading {
+                h2 {
                   padding: 30px 0;
                 }
-                p{
+                p {
                   display: none;
                 }
               }
             }
             .item__3 {
               .item__thread {
-                padding-bottom: 70px !important;
-                .view__all {
-                  cursor: pointer;
-                  opacity: 1 !important;
-                  position: absolute;
-                  bottom: 7px;
-                  left: 45%;
-                  p {
-                    @include styleText($color-white-0, $fs-2 + 5, $fw-normal);
-                  }
+                position: absolute;
+                z-index: 20;
+                bottom: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                padding: $pd-1;
+                background: rgba(6, 120, 188, 0.9);
+
+                p {
+                  @include styleText($color-white-0, $fs-1, $fw-normal);
+                  margin-bottom: 0px;
+                }
+                
+                i {
+                  font-size: $fs-1;
+                  color: $color-white-0;
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  background-color: $color-blue-0;
+                  line-height: 30px;
+                  border: 2px solid $color-white-0;
+                  text-align: center;
                 }
               }
             }
@@ -314,6 +287,5 @@
         }
       }
     }
-    
   }
 }

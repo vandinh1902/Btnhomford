@@ -631,20 +631,6 @@ html, body {
   margin-bottom: 0px;
 }
 
-#gallery .gallery_content .brand-gallery .brand_content .list .item .item__thread .view__all {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#gallery .gallery_content .brand-gallery .brand_content .list .item .item__thread .view__all p {
-  padding-right: 10px;
-}
-
 #gallery .gallery_content .brand-gallery .brand_content .list .item .item__thread i {
   font-size: 13px;
   color: #fff;
@@ -780,7 +766,7 @@ html, body {
     height: 500px;
   }
   #gallery .gallery_content .gallery_bg .bg_img .img1 {
-    display: none  !important;
+    display: none !important;
   }
   #gallery .gallery_content .gallery_bg .bg_img .img2 {
     display: block;
@@ -828,19 +814,38 @@ html, body {
     display: none;
   }
   #gallery .gallery_content .brand-gallery .brand_content .list .item__3 .item__thread {
-    padding-bottom: 70px !important;
-  }
-  #gallery .gallery_content .brand-gallery .brand_content .list .item__3 .item__thread .view__all {
-    cursor: pointer;
-    opacity: 1 !important;
     position: absolute;
-    bottom: 7px;
-    left: 45%;
+    z-index: 20;
+    bottom: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background: rgba(6, 120, 188, 0.9);
   }
-  #gallery .gallery_content .brand-gallery .brand_content .list .item__3 .item__thread .view__all p {
+  #gallery .gallery_content .brand-gallery .brand_content .list .item__3 .item__thread p {
     color: #fff;
-    font-size: 25px;
+    font-size: 13px;
     font-weight: normal;
+    margin-bottom: 0px;
+  }
+  #gallery .gallery_content .brand-gallery .brand_content .list .item__3 .item__thread i {
+    font-size: 13px;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #0276b3;
+    line-height: 30px;
+    border: 2px solid #fff;
+    text-align: center;
   }
 }
 
