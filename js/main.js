@@ -32,3 +32,46 @@ contactShowBtn.addEventListener("click", () => {
     showList.classList.toggle("open");
     iconUp.classList.toggle("icon-up");
 })
+
+
+
+// footer-menu
+
+const shopPing = document.querySelector(".shopping");
+const shoppingBtn = document.querySelector("#shopping-btn-list");
+// const shoppingList = document.querySelector(".shopping-list");
+const item_1 = document.querySelector(".finance");
+const item_2 = document.querySelector(".owner");
+const item_3 = document.querySelector(".experience");
+const itemBtn1 = document.querySelector("#item-btn1");
+const itemBtn2 = document.querySelector("#item-btn2");
+const itemBtn3 = document.querySelector("#item-btn3");
+
+
+
+shoppingBtn.addEventListener("click", () => {
+    shopPing.classList.toggle("open");
+    item_1.classList.remove("open");
+    item_2.classList.remove("open");
+    item_3.classList.remove("open");
+})
+
+itemBtn1.addEventListener("click", () => {
+    item_1.classList.toggle("open");
+    shopPing.classList.remove("open");
+    item_2.classList.remove("open");
+    item_3.classList.remove("open");
+})
+itemBtn2.addEventListener("click", () => {
+    item_2.classList.toggle("open");
+    item_1.classList.remove("open");
+    shopPing.classList.remove("open");
+    item_3.classList.remove("open");
+})
+itemBtn3.addEventListener("click", () => {
+    item_3.classList.toggle("open");
+    item_2.classList.remove("open");
+    shopPing.classList.remove("open");
+    item_1.classList.remove("open");
+})
+
