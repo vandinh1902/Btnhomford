@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FORD</title>
   <!-- CSS Boostrap -->
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/main.css">
@@ -401,7 +405,7 @@
         </div>
         <div class="container-right">
           <div class="finance">
-            <div class="list-heading">
+            <div class="list-heading col-">
               <span>Finance</span>
             </div>
             <ul class="item">
@@ -468,14 +472,14 @@
     <div class="secondary">
       <div class="secondary_container">
         <div class="secondary-left">
-          <ul class="left-contact">
-            <li>
+          <ul class="secondary-list">
+            <li class="secondary-item" >
               <a href="#" class="update">
                 <span class="icon-contact"><i class="bi bi-envelope"></i></span>
                 <span class="text">Get Updates</span>
               </a>
             </li>
-            <li class="_comment">
+            <li class="secondary-item1">
               <a href="#" class="update">
                 <span class="icon-contact"><i class="bi bi-chat-right-text"></i></span>
                 <span class="text">Share your thoughts about Ford.com</span>
@@ -484,7 +488,10 @@
           </ul>
         </div>
         <div class="secondary-right">
-          <p class="text-right">Follow Ford</p>
+          <div class="secondary-right-heading">
+            <p class="text-icon">Follow <span>Ford </span></p>
+            
+          </div>
           <ul class="right-contact">
             <li>
               <a href="#"><i class="bi bi-facebook"></i></a>
@@ -503,22 +510,22 @@
       </div>
     </div>
     <div class="tertiary">
-      <nav class="nav-main">
-        <div class="nav_container">
+      <div class="tertiary-content">
+        <div class="tertiary-content-top">
           <div class="language">
             <a href="#">
               <span class="icon-language"><i class="bi bi-globe"></i></span>
               <span class="text-language">Change Language</span>
             </a>
+            <div class="language-logo">
+              <img src="./img/ford.png" alt="">
+            </div>
           </div>
-          <a href="#" class="logo">
-            <span class="logo-ford"></span>
-          </a>
-          <ul class="_2021">
-            <li class="ford-company">
-              <a href="#">© 2021 Ford Motor Company</a>
-            </li>
-          </ul>
+          
+          
+        </div>
+        <div class="tertiary-content-bottom">
+          <h2>© 2021 Ford Motor Company</h2>
           <ul class="link-contact">
             <li class="skinny">
               <a href="#">
@@ -577,7 +584,12 @@
             </li>
           </ul>
         </div>
-      </nav>
+        <div class="tertiary-content-logomb">
+          <a href="">
+            <img src="./img/ford.png" alt="">
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 
