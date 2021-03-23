@@ -261,6 +261,90 @@
   #gallery {
     .gallery_content {
       .gallery_bg {
+    
+      .bg_text {
+          .text_heading {
+            h2 {
+              text-align: center;
+              // margin-top: -50px;
+              @include styleText($color-white-0, $fs-3, $fw-normal);
+            }
+          }
+          .text {
+            left: 42%;
+            
+            p {
+              a {
+                span {
+                  @include styleText($color-white-0, $fs-1, $fw-normal);
+                }
+                .icon_text {
+                  display: inline-block;
+                  width: 10px;
+                  height: 10px;
+                  line-height: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .brand-gallery {
+        .brand_content {
+          .list {
+            
+            
+            .item__1 {
+             
+              .heading {
+                h2 {
+                  padding: 30px 0;
+                }
+               
+              }
+            }
+            .item__3 {
+              .item__thread {
+                position: absolute;
+                z-index: 20;
+                bottom: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                padding: $pd-1;
+                background: rgba(6, 120, 188, 0.9);
+
+                p {
+                  @include styleText($color-white-0, $fs-1, $fw-normal);
+                  margin-bottom: 0px;
+                }
+
+                i {
+                  font-size: $fs-1;
+                  color: $color-white-0;
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  background-color: $color-blue-0;
+                  line-height: 30px;
+                  border: 2px solid $color-white-0;
+                  text-align: center;
+                }
+              }
+            }
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive("small") {
+  #gallery {
+    .gallery_content {
+      .gallery_bg {
         .bg_img {
           img {
             height: 500px;

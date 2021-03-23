@@ -850,6 +850,66 @@ html, body {
 }
 
 @media screen and (max-width: 768px) {
+  #gallery .gallery_content .gallery_bg .bg_text .text_heading h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  #gallery .gallery_content .gallery_bg .bg_text .text {
+    left: 42%;
+  }
+  #gallery .gallery_content .gallery_bg .bg_text .text p a span {
+    color: #fff;
+    font-size: 13px;
+    font-weight: normal;
+  }
+  #gallery .gallery_content .gallery_bg .bg_text .text p a .icon_text {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+  }
+  #gallery .gallery_content .brand-gallery .brand_content .list .item__1 .heading h2 {
+    padding: 30px 0;
+  }
+  #gallery .gallery_content .brand-gallery .brand_content .list .item__3 .item__thread {
+    position: absolute;
+    z-index: 20;
+    bottom: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background: rgba(6, 120, 188, 0.9);
+  }
+  #gallery .gallery_content .brand-gallery .brand_content .list .item__3 .item__thread p {
+    color: #fff;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 0px;
+  }
+  #gallery .gallery_content .brand-gallery .brand_content .list .item__3 .item__thread i {
+    font-size: 13px;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #0276b3;
+    line-height: 30px;
+    border: 2px solid #fff;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
   #gallery .gallery_content .gallery_bg .bg_img img {
     height: 500px;
   }
@@ -1076,7 +1136,7 @@ html, body {
 }
 
 .contact .contact__search {
-  padding: 30px;
+  padding: 30px 60px;
   background-color: #333;
 }
 
@@ -1089,29 +1149,20 @@ html, body {
           justify-content: center;
 }
 
+.contact .contact__search .search__content .search__left i {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
 .contact .contact__search .search__content .search__left .search {
   width: 350px;
-  padding-left: 30px;
   font-size: 30px;
   background-color: #333;
   border: 1px solid #333;
   color: white;
-}
-
-.contact .contact__search .search__content .search__left .search::-webkit-input-placeholder {
-  color: white;
-}
-
-.contact .contact__search .search__content .search__left .search:-ms-input-placeholder {
-  color: white;
-}
-
-.contact .contact__search .search__content .search__left .search::-ms-input-placeholder {
-  color: white;
-}
-
-.contact .contact__search .search__content .search__left .search::placeholder {
-  color: white;
+  padding-left: 10px;
 }
 
 .contact .contact__search .search__content .search__left .search:focus {
@@ -1142,6 +1193,12 @@ html, body {
   color: #fff;
   font-size: 17px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact .contact__search {
+    padding: 30px 30px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1223,7 +1280,7 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 95px;
+  padding: 0 60px;
 }
 
 .footer .secondary .secondary_container .secondary-left {
@@ -1345,7 +1402,7 @@ html, body {
 }
 
 .footer .tertiary .tertiary-content .tertiary-content-top {
-  padding: 0 95px;
+  padding: 0 60px;
   position: relative;
 }
 
@@ -1388,7 +1445,7 @@ html, body {
 }
 
 .footer .tertiary .tertiary-content .tertiary-content-bottom {
-  padding: 0 95px;
+  padding: 0 60px;
 }
 
 .footer .tertiary .tertiary-content .tertiary-content-bottom h2 {
@@ -1450,9 +1507,6 @@ html, body {
 }
 
 @media screen and (max-width: 768px) {
-  .footer .container-main {
-    padding: 0 35px 0;
-  }
   .footer .container-main .footer-main .container-left {
     width: 60%;
   }
@@ -1598,17 +1652,17 @@ html, body {
     padding-bottom: 10px;
   }
   .footer .tertiary .tertiary-content .tertiary-content-top {
-    padding: 0 15px;
+    padding: 0 25px;
   }
   .footer .tertiary .tertiary-content .tertiary-content-bottom {
-    padding: 0 15px;
+    padding: 0 25px;
   }
   .footer .tertiary .tertiary-content .tertiary-content-bottom .link-contact {
     display: block;
   }
   .footer .tertiary .tertiary-content .tertiary-content-logomb {
     display: block;
-    padding: 0 15px;
+    padding: 0 25px;
     margin-top: 20px;
   }
 }
